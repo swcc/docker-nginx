@@ -11,7 +11,7 @@ RUN apt-get update
 RUN apt-get install -y vim curl wget build-essential python-software-properties
 RUN add-apt-repository -y ppa:nginx/stable
 RUN apt-get update
-RUN apt-get install -y nginx
+RUN apt-get install -y nginx-extras
 
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
